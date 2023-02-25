@@ -40,7 +40,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/date"
+        android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/btnBgColor"
@@ -54,7 +54,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/date"
         android:textColor="@color/textBlue"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
@@ -72,7 +72,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/total_in_minutes"
         android:textColor="@color/textBlue"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         />
 

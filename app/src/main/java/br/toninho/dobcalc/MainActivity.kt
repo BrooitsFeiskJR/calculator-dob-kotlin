@@ -1,19 +1,38 @@
 package br.toninho.dobcalc
 
+import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.core.widget.addTextChangedListener
+import android.widget.Toast
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btn = findViewById<Button>(R.id.date)
+        val btnDatePicker: Button = findViewById(R.id.btnDatePicker)
 
-        btn.addTextChangedListener {
-            btn.text = "Clicked!"
+        btnDatePicker.setOnClickListener {
+            clickDatePicker()
         }
+    }
+
+    fun clickDatePicker() {
+        val myCalendar = Calendar.getInstance()
+
+        val year = myCalendar.get(Calendar.YEAR)
+        val month = myCalendar.get(Calendar.MONTH)
+        val day = myCalendar.get(Calendar.DAY_OF_MONTH)
+
+        DatePickerDialog(this, {view, year, month, dayOfMonth ->
+            Toast.makeText(this, "DatePicker works!", Toast.LENGTH_SHORT).show()
+        },
+            year,
+            month,
+            day,
+        ).show()
+
     }
 }
