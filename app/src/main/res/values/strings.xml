@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DOBCalc</string>
+    <string name="calculate_your">CALCULATE YOUR</string>
+    <string name="age">AGE</string>
+    <string name="in_minutes">In Minutes</string>
+    <string name="calculate">Select Date</string>
+    <string name="date">14/09/2021</string>
+    <string name="current_date">Select Date</string>
+    <string name="total_in_minutes">1440</string>
+</resources>
